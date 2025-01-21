@@ -288,7 +288,7 @@ class BankWire extends PaymentModule
 
         return [
             'cta_text' => $this->l('Pay by Bank Wire'),
-            'logo'     => Media::getMediaPath(_PS_MODULE_DIR_.$this->name.'/bankwire.jpg'),
+            'logo'     => Media::getMediaPath(_PS_MODULE_DIR_.$this->name.'/bankwire.svg'),
             'action'   => $this->context->link->getModuleLink($this->name, 'validation', [], true),
         ];
     }
